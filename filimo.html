@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="css/fontawesome.css"/>
+        <link rel="stylesheet" href="css/brands.css"/>
+        <link rel="stylesheet" href="css/regular.css"/>
+        <link rel="stylesheet" href="css/solid.css"/>
+    </head>
+    <body>
+        <div class="faq">
+            <div class="container">
+                <div class="header">
+                  <h4>سوالات متداول</h4>
+                 <p>سوال شایع دیگر کاربران شاید برای شما پیش امده باشد</p>
+                </div>
+                <div class="question-box">
+                   <div class="question-box-holder" id="questionbox1"  onclick="changeColor1()">
+                        <div class="question">
+                            <h4 id="question1">آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟</h4>
+                            <i id="rotate1" class="fa-sharp fa-solid fa-plus"></i>
+                        </div>
+                        <p id="answer1">بله، شما می‌توانید همه فیلم‌ و سریال‌های فیلیمو را داخل خود اپلیکیشن فیلیمو دانلود کنید و برای زمان‌هایی که اینترنت ندارید یا در سفر، هواپیما و قطار آ‌ن‌ها را تماشا کنید. برای دانلود هم از طریق رایانه و هم از طریق خود اپلیکیشن فیلیمو می‌توانید اقدام‌کنید. برای جزییات بیشتر می‌توانید فیلم‌های آموزشی مربوط به دانلود از طریق سایت و دانلود از طریق  اپلیکیشن را تماشا کنید.</p>
+                   </div>
+                   <div class="question-box-holder" id="questionbox2"  onclick="changeColor2()">
+                        <div class="question">
+                            <h4 id="question2">آیا فیلیمو برای خارج از ایران در دسترس است؟</h4>
+                            <i id="rotate2" class="fa-sharp fa-solid fa-plus"></i>
+                       </div>
+                       <p id="answer2">خیر. درحال حاضر تماشای فیلیمو فقط در داخل کشور فعال است و امکان تماشا برای افراد خارج از کشور فعال نیست.</p>
+                    </div>
+                    <div class="question-box-holder" id="questionbox3" onclick="changeColor3()">
+                       <div class="question">
+                          <h4 id="question3">آیا برای تماشای فیلم‌های اکران آنلاین، باید اشتراک بخرم؟</h4>
+                          <i id="rotate3" class="fa-sharp fa-solid fa-plus"></i>
+                        </div>
+                        <p>تماشای فیلم‌های اکران آنلاین مانند تماشا در سینمای واقعی است؛ یعنی برای دیدن هر فیلم که در اکران آنلاین است باید بلیت تهیه کنید و به جای رفتن به سالن سینما، 8 ساعت فرصت دارید که آن فیلم را از داخل خانه تماشا کنید.</p>
+                   </div>
+                   <div class="question-box-holder" id="questionbox4" onclick="changeColor4()">
+                        <div class="question">
+                            <h4 id="question4">از کجا می‌توانم نرم‌افزار اندروید یا iOS فیلیمو را دانلود کنم؟</h4>
+                            <i id="rotate4" class="fa-sharp fa-solid fa-plus"></i>
+                         </div>
+                         <p>برای نصب نرم‌افزار اندرویدی فیلیمو می‌توانید ازطریق کافه بازار یا مایکت اقدام به دانلود کنید. یا می‌توانید روی گزینه روبرو بزنید و به‌طور مستقیم فایل نرم‌افزار را دریافت کنید. (دانلود مستقیم نرم‌افزار اندروید) برای دانلود نرم‌افزار iOS فیلیمو نیز کافیست روی گزینه روبرو بزنید و به‌طور مستقیم فایل نرم‌افزار را دریافت کنید. (دانلود مستقیم نرم‌افزار iOS)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function changeColor1(){
+                document.getElementById("question1").style.color = "#f4843f";
+                document.getElementById("answer1").style.display= "block";
+                document.getElementById("rotate1").style.transform= "rotate(45deg)";
+            }
+            function changeColor2(){
+                document.getElementById("question2").style.color = "#f4843f";
+                document.getElementById("answer2").style.display= "block";
+                document.getElementById("rotate2").style.transform= "rotate(45deg)";
+            }
+            function changeColor3(){
+                document.getElementById("question3").style.color = "#f4843f";
+                document.getElementById("questionbox3").classList.toggle="active";
+                document.getElementById("rotate3").style.transform= "rotate(45deg)";
+            }
+            function changeColor4(){
+                document.getElementById("question4").style.color = "#f4843f";
+                document.getElementById("questionbox4").classList.toggle="active";
+                document.getElementById("rotate4").style.transform= "rotate(45deg)";
+            }
+        </script>
+    </body>
+</html>
